@@ -18,7 +18,14 @@ import javax.swing.WindowConstants;
  */
 public class PaintComponentSample extends JPanel{
     //利用 paintComponent 讓 JPanel 畫出一個橢圓
-    
+       @Override
+    public void paintComponent(Graphics g) {
+        int width = getWidth();
+        int hight = getHeight();
+        g.setColor(Color.BLACK);
+        g.drawOval(0, 0, width, hight);
+        super.paintComponents(g);//To change body of generated methods, choose Tools | Templates.
+    }
     //////////////////////////////////////////
     /**
      * @param args the command line arguments
@@ -32,6 +39,14 @@ public class PaintComponentSample extends JPanel{
         PaintComponentSample c=new PaintComponentSample();
         frame.add(c);
         frame.setVisible(true);
+    }
+
+    private int getwidth() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private int gethight() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

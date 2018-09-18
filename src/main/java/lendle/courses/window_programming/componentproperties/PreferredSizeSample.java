@@ -19,6 +19,14 @@ import javax.swing.WindowConstants;
  */
 public class PreferredSizeSample extends JPanel{
 
+    private static void PreferredSize(int par, int par2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private static void SetPreferredSize(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public void paintComponent(Graphics g) {
         g.setColor(Color.BLACK);
@@ -39,12 +47,16 @@ public class PreferredSizeSample extends JPanel{
         
         for(int i=0; i<10; i++){
             PreferredSizeSample c=new PreferredSizeSample();
-            //設定 preferredSize 為 50, 50 跟 100, 100 跟 150, 150
+            c.setPreferredSize(new Dimension (50,50));//設定 preferredSize 為 50, 50 跟 100, 100 跟 150, 150
             //觀察看看
             /////////////////////////////////////////////
             frame.add(c);
         }
         frame.setVisible(true);
+    }
+
+    private void setPreferredSize(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
